@@ -33,7 +33,7 @@ sudo docker run -d \
     -e MYSQL_DATABASE="$MYSQL_DATABASE" \
     -e MYSQL_USER="$MYSQL_USER" \
     -e MYSQL_PASSWORD="$MYSQL_PASSWORD" \
-    -p "$MYSQL_PORT":3306 \
+    -p "$MYSQL_PORT":"$MYSQL_PORT" \
     -v "$MYSQL_DATA_DIR":/var/lib/mysql \
     mysql:latest
 
